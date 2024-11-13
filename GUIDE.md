@@ -1,3 +1,10 @@
+# Dependencies
+
+| Program Name | 	Role        |	Package Name |
+| ------------ | ------------ | ------------ |
+| Meson        | Build System |	meson        |
+| Ninja        | Build System | ninja        |
+
 # Listed Stuff
 
 # 1. Programs
@@ -5,19 +12,33 @@
 ## Compositor
 - Wayfire
 
+```
+git clone https://github.com/WayfireWM/wf-install
+cd wf-install
+./install.sh --prefix /opt/wayfire --stream master
+```
+
 ## Wayfire Plugins
 - Pixdecor
+
+```
+git clone https://github.com/soreau/pixdecor.git
+cd pixdecor
+PKG_CONFIG_PATH=/opt/wayfire/lib/pkgconfig meson setup build --prefix=/opt/wayfire
+ninja -C build
+ninja -C build install
+```
 
 ## Components
 | Role                    | Program Name | Description             | Package Name |
 | ----------------------- | ------------ | ----------------------- | ------------ |
-| Bar                     | Ironbar      | A GTK+ bar for wlroots  |              |
+| Bar                     | Ironbar      | A GTK+ bar for wlroots  | ironbar      |
 | Left Widgets            | EWW          | Widget Framework        |              |
-| Notification            | Mako         | Notification            |              |
-| App Launcher            | ULauncher    | App Launcher            |              |
+| Notification            | Mako         | Notification            | mako         |
+| App Launcher            | ULauncher    | App Launcher            | ulauncher    |
 | Screenshot with Preview | Grimshot-pv  | Screenshot with Preview |              |
-| Audio Visualizer        | Xava         | Audio Visualizer        |              |
-| Screenshot Editor       | Swappy       | Screenshot and Editor   |              |
+| Audio Visualizer        | Xava         | Audio Visualizer        | xava         |
+| Screenshot Editor       | Swappy       | Screenshot and Editor   | swappy       |
 
 ## Fonts
 - Caskaydia Cove Nerd Font
@@ -82,6 +103,8 @@ That is:
 | GTK3 D-Bus Menu Library              |                                       | libdbusmenu-gtk3      |
 | GTKMM (GTK--) 3                      | C++ API for GTK+ 3                    | gtkmm                 |
 | GLib 2 Development Files             |                                       | glib-devel            |
+
+Note: Not sure if we need `-devel` versions of these packages, since Arch Linux bundles both into one package.
 
 ## 2.2. Wayfire Manual Install
 
