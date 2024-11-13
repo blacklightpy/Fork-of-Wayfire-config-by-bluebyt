@@ -1,3 +1,10 @@
+For usage guide:
+- See list of apps with custom Window Rules
+- See shortcuts list
+- See systemctl references
+
+Install Guide:
+
 # Dependencies
 
 | Program Name | 	Role        |	Package Name |
