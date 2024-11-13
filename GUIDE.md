@@ -43,6 +43,10 @@ ninja -C build install
 ## Fonts
 - Caskaydia Cove Nerd Font
 
+To Install:
+- Download: https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaCode.zip
+- Unzip it and copy it to `~/.local/share/fonts/` (including folder or not)
+
 ## Window Themes
 - TokyoNight-Dark
 
@@ -50,12 +54,24 @@ Install command:
 
 ```
 git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme
+cd Tokyo-Night-GTK-Theme
 ./install.sh -d ~/.local/share/themes -c dark -l --tweaks black
 ```
 
 ## Icons
 - Tela-circle-icon-theme (Option 1)
 - Aretha-Dark-Icons (Option 2)
+
+**For Tela Circle Icon Theme:**
+```
+git clone https://github.com/vinceliuice/Tela-circle-icon-theme
+cd Tela-circle-icon-theme
+./install.sh # -a if you want all colour themes
+```
+
+**For Aretha Dark Icon Theme:**
+- Go to: https://www.gnome-look.org/p/2180417
+
 
 ## Shell
 - Fish
@@ -67,8 +83,29 @@ git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme
 | Catnip   | Fetch                     |
 | SwayOSD  | OSD for Volume, Caps Lock |
 
+**SwayOSD**
+
+1. Install SwayOSD
+```
+git clone https://github.com/ErikReider/SwayOSD
+cd SwayOSD
+
+meson setup build
+ninja -C build
+meson install -C build
+```
+2. Run backend (probably included):
+
+`pkexec swayosd-libinput-backend `
+
+3. Start server (probably included):
+
+` exec swayosd-server`
+
 ## Utilities
-- Lite XL: Text Editor
+| Program | Function    |
+| ------- | ----------- |
+| Lite XL | Text Editor |
 
 # 2. Dependencies
 
@@ -247,16 +284,16 @@ plugins = ipc ipc-rules follow-focus
 * Note: `cleanup_after_start.sh` is in .config/hypr..
 
 ## 3.2. Pacman Aliases
-| Command   | Alias                                               | Description |
-| --------- | --------------------------------------| ----------- |
-| pacmandir | vpacman -Ql | To retrieve a list of the files installed by a package |
-| pacmanR   | pacman -Rs | To remove a package and its dependencies | 
-| pacmanQ   | pacman -Qs | To search for already installed packages |
-| pacmanQi  | pacman -Qi | To display information about locally installed packages |
-| unlock    | sudo rm /var/lib/pacman/db.lck | Remove pacman lock |
-| cleanup   | sudo pacman -Rns (pacman -Qtdq) | Remove orphaned packages |
-| clean     | sudo pacman -Sc | Remove old packages from cache |
-| extract   | for i in *.rar; do unrar x -o+ "$i"; end |  |
+| Command   | Alias                                               | Description                                             |
+| --------- | ----------------------------------------------------| ------------------------------------------------------- |
+| pacmandir | pacman -Ql                                          | To retrieve a list of the files installed by a package  |
+| pacmanR   | pacman -Rs                                          | To remove a package and its dependencies                |
+| pacmanQ   | pacman -Qs                                          | To search for already installed packages                |
+| pacmanQi  | pacman -Qi                                          | To display information about locally installed packages |
+| unlock    | sudo rm /var/lib/pacman/db.lck                      | Remove pacman lock                                      |
+| cleanup   | sudo pacman -Rns (pacman -Qtdq)                     | Remove orphaned packages                                |
+| clean     | sudo pacman -Sc                                     | Remove old packages from cache                          |
+| extract   | for i in *.rar; do unrar x -o+ "$i"; end            |                                                         |
 
 ## 4. Shell Configuration
 ```
