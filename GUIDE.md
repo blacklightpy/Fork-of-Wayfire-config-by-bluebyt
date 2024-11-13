@@ -9,19 +9,28 @@
 - Pixdecor
 
 ## Components
-- Ironbar: A GTK bar for wlroots
-- EWW: Left widget
-- Mako: Notification
-- ULauncher: App Launcher
-- Grimshot-pv: Script with screenshot preview
-- Xava: Audio Visualizer
-- Swappy: Screenshot and Editor
+| Role                    | Program Name | Description             | Package Name |
+| ----------------------- | ------------ | ----------------------- | ------------ |
+| Bar                     | Ironbar      | A GTK+ bar for wlroots  |              |
+| Left Widgets            | EWW          | Widget Framework        |              |
+| Notification            | Mako         | Notification            |              |
+| App Launcher            | ULauncher    | App Launcher            |              |
+| Screenshot with Preview | Grimshot-pv  | Screenshot with Preview |              |
+| Audio Visualizer        | Xava         | Audio Visualizer        |              |
+| Screenshot Editor       | Swappy       | Screenshot and Editor   |              |
 
 ## Fonts
 - Caskaydia Cove Nerd Font
 
 ## Window Themes
-- TokyoNight-Dark + Install command
+- TokyoNight-Dark
+
+Install command:
+
+```
+git clone https://github.com/Fausto-Korpsvart/Tokyo-Night-GTK-Theme
+./install.sh -d ~/.local/share/themes -c dark -l --tweaks black
+```
 
 ## Icons
 - Tela-circle-icon-theme (Option 1)
@@ -31,9 +40,11 @@
 - Fish
 
 ## Shell Tools
-- Starship: Prompt
-- Catnip: Fetch
-- SwayOSD: OSD for Volume, Caps Lock
+| Program  | Role                      |
+| -------- | ------------------------- |
+| Starship | Prompt                    |
+| Catnip   | Fetch                     |
+| SwayOSD  | OSD for Volume, Caps Lock |
 
 ## Utilities
 - Lite XL: Text Editor
@@ -46,29 +57,31 @@
 
 That is:
 
-- FreeType2
-- GLM
-- DRM Library
-- evdev Library
-- GL Library
-- Input Library
-- JPEG Library
-- PNG Library
-- X Keyboard Common Library
-- XML2 Library
-- Doctest
-- Doxygen
-- JSON Library by N Lohmann
-- Notify Library
-- Base Development Files
-- pkg-config
-- Autoconf
-- GObject Introspection
-- GTK Layer Shell
-- Scour
-- GTK3 D-Bus Menu Library
-- GTKMM3
-- GLib2 Developement Files
+| Program                              | Function                              | Package               |
+| ------------------------------------ | ------------------------------------- | --------------------- |
+| Freetype 2                           | Font Rendering Engine and Library     | freetype              |
+| GLM                                  | C++ Mathematical Library for Graphics | gml                   |
+| DRM Library                          |                                       | libdrm                |
+| Event Device Library                 |                                       | libevdev              |
+| OpenGL Library                       |                                       | libglvnd              |
+| Input Library                        |                                       | libinput              |
+| JPEG Library                         |                                       | libjpeg               |
+| PNG Library                          |                                       | libpng                |
+| X Keyboard Common Library            |                                       | libxkbcommon          |
+| XML2 Library                         |                                       | libxml2               |
+| Doctest                              | C++ Testing Framework                 | doctest               |
+| Doxygen                              |                                       | doxygen               |
+| JSON C++ / JSON Library by N Lohmann |                                       | json-c++              |
+| Notify Library                       |                                       | libnotify             |
+| Base Development Files               |                                       | base-devel            |
+| pkg-config                           |                                       | pkg-config            |
+| GNU Autoconf                         |                                       | autoconf              |
+| GObject Introspection                |                                       | gobject-introspection |
+| GTK Layer Shell                      |                                       | gtk-layer-shell       |
+| Scour                                | SVG Optimizer                         | python3-scour         |
+| GTK3 D-Bus Menu Library              |                                       | libdbusmenu-gtk3      |
+| GTKMM (GTK--) 3                      | C++ API for GTK+ 3                    | gtkmm                 |
+| GLib 2 Development Files             |                                       | glib-devel            |
 
 ## 2.2. Wayfire Manual Install
 
