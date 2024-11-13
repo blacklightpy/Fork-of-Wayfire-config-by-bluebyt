@@ -295,7 +295,7 @@ plugins = ipc ipc-rules follow-focus
 | clean     | sudo pacman -Sc                                     | Remove old packages from cache                          |
 | extract   | for i in *.rar; do unrar x -o+ "$i"; end            |                                                         |
 
-## 4. Shell Configuration
+# 4. Shell Configuration
 ```
 catnip
 export LS_COLORS="*.ini=31:*.ttf=36:*.toml=35"
