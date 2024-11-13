@@ -130,26 +130,34 @@ plugins = ipc ipc-rules follow-focus
 ## 1.1. Scripts
 
 ### 1.1.1. Widgets
-- `cava-internal` Music Visualizer Widget
-- `conky.sh` Widgets
-- `date.sh` Date for Widget
-- `thunar.sh` Open `/home/bluebyt`, Downloads and `/mnt/media` in Thunar with delays
-- `updates-notifier.sh`: Run `checkupdates` (alias) and notifies if there are any updates.
-- `volume-pop.sh:` Monitors volume changes on a loop and makes sound if there is a change.
-- `xavaRestart.sh`: Restarts xava if it is dead.
+| Program               | Function                                                                |
+| --------------------- | ----------------------------------------------------------------------- |
+| `cava-internal`       | Music Visualizer Widget                                                 |
+| `conky.sh`            | Widgets                                                                 |
+| `date.sh`             | Date for Widget                                                         |
+| `thunar.sh`           | Open `/home/bluebyt`, Downloads and `/mnt/media` in Thunar with delays  |
+| `updates-notifier.sh` | Run `checkupdates` (alias) and notifies if there are any updates.       |
+| `volume-pop.sh:`      | Monitors volume changes on a loop and makes sound if there is a change. |
+| `xavaRestart.sh`      | Restarts xava if it is dead.                                            |
 
 ### 1.1.2. Wallpapers
-- `wallpaper_set.sh`: Set Wallpapers
-- `wallpapers_loop.sh`: Loop Wallpapers
-- `kill_wallpaper.sh`: Stop Looping Wallpapers
+| Program              | Function                |
+| -------------------- | ----------------------- |
+| `wallpaper_set.sh`   | Set Wallpapers          |
+| `wallpapers_loop.sh` | Loop Wallpapers         |
+| `kill_wallpaper.sh`  | Stop Looping Wallpapers |
 
 ### 1.1.3. In Hyprland Config
-- `cleanup_after_start.sh`: Unsets some workspaces
-- `portal.sh`: Restarts XDG Desktop Portals
+| Program                  | Function                     |
+| ------------------------ | ---------------------------- |
+| `cleanup_after_start.sh` | Unsets some workspaces       |
+| `portal.sh`              | Restarts XDG Desktop Portals |
 
 ## 1.2. Binaries
-- SWWW: Wallpaper Widget
-- SWWW Daemon
+| Program     | Function                        |
+| ----------- | ------------------------------- |
+| swww        | Simple Wayland Wallpaper Widget |
+| swww-daemon | SWWW Daemon                     |
 
 # 2. Configs
 
@@ -158,34 +166,38 @@ plugins = ipc ipc-rules follow-focus
 - Hyprland, and Hyprpaper: Alternate Compositor
 
 ## 2.2. Programs
-- Catnip: Used as `cd`, has 3 fox wallpaper configs.
-- Conky: Has Edashich and grummimosa themes.
-- EWW: Widgets
-- Fish: Listed below in detail
-- Foot: Terminal
-- IPC Scripts: A lot of scripts to manage Wayfire, MPV and ChatGPT systems
-- Ironbar: Status Bar
-- Kitty: Terminal
-- Lite XL: Text Editor
-- Mako: Notification Daemon
-- MPD: Music Player Daemon
-- MPV: Media Player
-- NCMPCPP: Music Player
-- PipeWire: Sound Driver
-- PulseAudio: Sound Driver (Legacy)
-- Scripts: Plenty of Scripts to manage when to start apps
-- Starship: Shell Prompt
-- ULauncher: App Launcher
-- Waybar: Status Bar
-- wlogout: Logout menu
-- Xava: Music Visualizer
-- Zed: Text Editor
-- Zellij: Terminal Workspace Manager (like `tmux`)
+| Program     | Function                                                     |
+| ----------- | ------------------------------------------------------------ |
+| Catnip      | Used to show system information, has 3 fox wallpaper configs |
+| Conky       | Has Edashich and grummimosa themes.                          |  
+| EWW         | Widgets                                                      |
+| Fish        | Shell, listed below in detail                                |
+| Foot        | Terminal                                                     |
+| IPC Scripts | A lot of scripts to manage Wayfire, MPV and ChatGPT systems  |
+| Ironbar     | Status Bar                                                   |
+| Kitty       | Terminal                                                     |
+| Lite XL     | Text Editor                                                  |
+| Mako        | Notification Daemon                                          |
+| MPD         | Music Player Daemon                                          |
+| MPV         | Media Player                                                 |
+| NCMPCPP     | Music Player                                                 |
+| PipeWire    | Sound Driver                                                 |
+| PulseAudio  | Sound Driver (Legacy)                                        |
+| Scripts     | Plenty of Scripts to manage when to start apps               |
+| Starship    | Shell Prompt                                                 |
+| ULauncher   | App Launcher                                                 |
+| Waybar      | Status Bar                                                   |
+| wlogout     | Logout menu                                                  |
+| Xava        | Music Visualizer                                             |
+| Zed         | Text Editor                                                  |             
+| Zellij      | Terminal Workspace Manager (like `tmux`)                     |
 
 ## 2.3. Other (unlisted files in ~/.config)
-- chromium-flags.conf: Prefer Wayland
-- startship.toml: Starship config
-- wf-shell.ini: wf-shell
+| File                | What it does                |
+| ------------------- | --------------------------- |
+| chromium-flags.conf | Make Chrome prefer Wayland  |
+| startship.toml      | Starship config             |
+| wf-shell.ini        | wf-shell                    |
 
 # 3. Shell Aliases
 
